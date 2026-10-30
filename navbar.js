@@ -29,9 +29,9 @@ function heroChapterTop(i) {
 
 const items = [
   { label: "Home", icon: ICONS.home, fx: "glow", top: () => 0 },
-  { label: "Work", icon: ICONS.plane, fx: "plane", top: () => heroChapterTop(1) },
-  { label: "About me", icon: ICONS.drop, fx: "drop", top: () => heroChapterTop(2) },
-  { label: "Skills", icon: ICONS.globe, fx: "spin", top: () => (gallery ? gallery.offsetTop : 0) },
+  { label: "Velocity", icon: ICONS.plane, fx: "plane", top: () => heroChapterTop(1) },
+  { label: "Immersion", icon: ICONS.drop, fx: "drop", top: () => heroChapterTop(2) },
+  { label: "Gallery", icon: ICONS.globe, fx: "spin", top: () => (gallery ? gallery.offsetTop : 0) },
 ];
 
 function indexFromScroll() {

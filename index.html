@@ -4,12 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cinematic Scroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Top liquid navbar (built by navbar.js) -->
   <div class="site-nav" id="siteNavMount"></div>
+
+  <!-- Intro hero: clear glass crystal refracting the headline -->
+  <section class="prism" id="prism" aria-label="Introduction">
+    <div class="ph-stage">
+      <div class="ph-scene"></div>
+      <div class="ph-vignette" aria-hidden="true"></div>
+      <div class="ph-grain" aria-hidden="true"></div>
+
+      <div class="ph-copy">
+        <div class="ph-in ph-eyebrow" style="--i:0">
+          <span class="ph-rule"></span><span>Cinematic Scroll</span>
+        </div>
+        <div class="ph-spacer"></div>
+        <div class="ph-center">
+          <p class="ph-in ph-desc" style="--i:1">Three scenes, one scroll. A clear glass crystal bends the light around the headline while the story unfolds below.</p>
+          <div class="ph-in ph-actions" style="--i:2">
+            <a class="ph-btn ph-btn-solid" href="#hero" data-scroll="#hero">Start scrolling</a>
+            <a class="ph-btn ph-btn-line" href="#gallery" data-scroll="#gallery">See the gallery</a>
+          </div>
+        </div>
+        <div class="ph-in ph-meta" style="--i:3">
+          <div class="ph-facts"><span>Real transmission</span><span>Liquid glass</span><span>WebGL</span></div>
+          <div class="ph-rail"><div class="ph-rail-fill"></div></div>
+        </div>
+      </div>
+    </div>
+    <h1 class="ph-h1">Cinematic</h1>
+  </section>
 
   <section class="hero" id="hero" data-chapters="3">
 
@@ -97,5 +128,6 @@
   <script src="script.js"></script>
   <script src="carousel.js"></script>
   <script src="navbar.js"></script>
+  <script src="prism-hero.js"></script>
 </body>
 </html>
